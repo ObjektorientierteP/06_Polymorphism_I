@@ -8,7 +8,7 @@ public class App {
         Worker worker = new Worker();
         Drone drone = new Drone();
 
-        // Overloading
+        // Overloading -> casting
         pollObj(queen);
 
         pollObj(worker);
@@ -17,17 +17,7 @@ public class App {
         
     }
 
-    private static void pollObj(Queen obj){
-        output(obj.doYourJob());
-        output(obj.fly());
-    }
-
-    private static void pollObj(Worker obj){
-        output(obj.doYourJob());
-        output(obj.fly());
-    }
-   
-    private static void pollObj(Drone obj){
+    private static void pollObj(HonnyBee obj){
         output(obj.doYourJob());
         output(obj.fly());
     }
