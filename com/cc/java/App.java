@@ -10,10 +10,13 @@ public class App {
 
         // Overloading -> casting
         pollObj(queen);
-
         pollObj(worker);
-
         pollObj(drone);
+
+        // Das sollte eigentlich nicht möglich sein!
+        HonnyBee bee = new HonnyBee(); // Instantieren ein Superklasse
+        pollObj(bee);
+        pollObj(bee);
         
     }
 
